@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #add8e6; /* Light Blue */
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .icon {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .profile-picture {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .section {
+            padding-top: 20px;
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+        }
+        .additional-content {
+            display: none;
+        }
+        /* Remove bullet points from the list */
+        #interesting-info ul {
+            padding: 0;
+            list-style-type: none;
+        }
+        /* Limit the size of images */
+        .additional-content img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HELLO BOIS : D</h1>
+        <img src="https://i.postimg.cc/T1Xnn0C1/287587016-1596645614068724-3580907323586752515-n.jpg" alt="Your Profile Picture" class="profile-picture">
+        <div>
+            <p><strong>Name:</strong> John Roland E. Estrabon </p>
+            <p><strong>Age:</strong> 19 </p>
+            <p><strong>Address:</strong> Purok Maligaya, Barangay Carpenter Hill, Koronadal City</p>
+            <p><strong>School:</strong> Mindanao State University South Cotabato</p>
+        </div>
+        <div>
+            <h2>About Me</h2>
+            <p>Hello, I am JR. I was born on June 27, 2004, and I am a student at MSU General Santos. If I were to describe myself, I would say I am a lazy otaku who does nothing but sleep, play games, or watch anime all day when there is no class lmao.</p>
+        </div>
+        <div>
+            <h2>My Social Media</h2>
+            <a href="https://www.facebook.com/COOLGUY18PRO/"><img class="icon" src="https://i.postimg.cc/HxS82vfs/124010.png" alt="Facebook"></a>
+            <a href="https://www.reddit.com/u/Affectionate-Monk-90/s/eNctp2xo6c"><img class="icon" src="https://i.postimg.cc/ZY2hdFC8/images.jpg" alt="Reddit"></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img class="icon" src="https://i.postimg.cc/Bvfjtb6c/youtube-icon-2048x2048-wiwalbpx.png" alt="YouTube"></a>
+            <a href="https://discord.com/channels/769162714190577704"><img class="icon" src="https://i.postimg.cc/Zn2cf51R/636e0a6a49cf127bf92de1e2-icon-clyde-blurple-RGB.png" alt="Discord"></a>
+        </div>
+
+        <!-- "Interesting Info" section with subcategories -->
+        <div id="interesting-info" class="section">
+            <h2>Interesting Info</h2>
+            <ul>
+                <li><a href="#" onclick="showContent('hobbies')">Hobbies</a></li>
+            </ul>
+            <div id="hobbies" class="additional-content">
+                <h3>Hobbies</h3>
+                <div>
+                    <h4>Watching Anime</h4>
+                    <img src="https://i.postimg.cc/zvx6dbhK/anime-love.jpg" alt="Anime Picture">
+                    <h5>Favorite anime</h5>
+                    <ul>
+                        <li><img src="https://i.postimg.cc/mrhW1GP8/MV5-BN2-Nl-M2-Y5-Y2-Mt-Yj-U5-Mi00-Zj-Zi-LWFj-Nj-Mt-ZDNi-Yz-Jl-Mjhk-OWZi-Xk-Ey-Xk-Fqc-Gde-QXVy-Njc2-Nj-A5-MTU-V1-FMjpg-UX1000.jpg" alt="Anime 1"></li>
+                        <li><img src="https://i.postimg.cc/bNYCw9DR/MV5-BYWY3-MTli-MWYt-Mm-Q1-Zi00-NDE0-LTkz-Ym-Ut-ZDI4-MDM1-MTgw-ZTc4-Xk-Ey-Xk-Fqc-Gde-QXVy-Nj-Aw-NDUx-ODI-V1-FMjpg-UX1000.jpg" alt="Anime 2"></li>
+                        <li><img src="https://i.postimg.cc/tRD0kTF2/MV5-BMDhm-Nj-Ux-M2-Ut-ZTY2-Zi00-OTQ0-LWEx-Njgt-NDhk-NTUy-Mj-Q3-Mm-U5-Xk-Ey-Xk-Fqc-Gde-QXVy-Nj-Aw-NDUx-ODI-V1.jpg" alt="Anime 3"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showContent(sectionId) {
+            // Hide all additional content sections
+            var additionalContents = document.getElementsByClassName('additional-content');
+            for (var i = 0; i < additionalContents.length; i++) {
+                additionalContents[i].style.display = 'none';
+            }
+
+            // Show additional content of the clicked section
+            var section = document.getElementById(sectionId);
+            section.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
+</html>
